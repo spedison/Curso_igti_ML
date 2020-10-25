@@ -1,0 +1,19 @@
+## Logando na máquina
+ssh -i ~/Jup.key azureuser@191.235.92.189
+
+## Instalando o Jupyter ( no debian 10 )
+sudo su -
+apt-get update
+apt install vim git
+apt install gcc g++ binutils make
+apt-get install zlib1g-dev
+apt-get install libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev 
+apt install nodejs
+apt install python3-pip
+pip3 install jupyterlab pandas numpy scikit-learn matplotlib
+
+
+## Rodando o Jupyter
+nohup jupyter lab --allow-root --port=80 --ip='*' --NotebookApp.token='' --NotebookApp.password='' &
+http://191.235.92.189/
+
