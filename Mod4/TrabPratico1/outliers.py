@@ -53,7 +53,7 @@ xy_moda = mode(xy)[0][0]
 xi_std = np.std(xi, ddof=1)
 xy_std = np.std(xy, ddof=1)
 
-# Z-Score
+# Z-Score ( Subtrai da média e divide pelo desvio padrão. Deve ser menor que 3, m moódulo.
 z_score_xi = (xi - xi_media) / xi_std
 z_score_xy = (xy - xy_media) / xy_std
 
